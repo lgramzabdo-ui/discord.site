@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body{
+    display: flex;
+  justify-content: center;
+    flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+    gap: 50px;
+    padding-top: 0px;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #EE0000;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("blood.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.50;
+    z-index: -1;
+}
+
+@font-face{
+    font-family: 'font1';
+    src: url('font1.ttf');
+}
+
+@font-face {
+  font-family: 'font2';
+  src: url('font2.ttf');
+}
+
+@font-face{
+    font-family: 'font3';
+    src: url('gurl.ttf');
+}
+
+.info {
+    width: auto;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    background: #7979797D;
+    gap: 15px;
+    margin: 40px;
+    border-radius: 25px;
+    border: 3px solid #000000D1;
+}
+
+.info img{
+  height: 75px;
+  width: auto;
+  border: 3px solid black;
+  border-radius: 50px;
+}
+
+.info h3{
+    font-family: 'font3';
+    font-size: 15px;
+    transform: translate(0px, -30px);
+}
+
+.text-box{
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.avatar-box {
+  position: relative;
+  width: 75px;
+  height: 75px;
+}
+
+.avatar-box img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+}
+
+#statusDot {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  border: none;
+  border-radius: 0;
+}
+
+h4{
+  transform: translate(12px, -145px);
+  padding-left: 40px;
+  color: #DC0000;
+}
+
+h2{
+  white-space: nowrap;
+  font-family: 'font2';
+  font-size: 30px;
+}
+
+
+h1{
+  font-family: "Bebas Neue";
+  position: relative;
+  top: -15px;
+  font-size: 30px;
+  animation: gradientFlow 6s linear infinite;
+  background: linear-gradient(90deg, #000000, #460D0D, #670808);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+    padding-top: 35px;
+  animation: gradientFlow 3s linear infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.boxs{
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-150px);
+  gap: 15px;
+  margin-top: 100px;
+}
+
+.dsc{
+  height: 70px;
+  width: 300px;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  background: #d8000;
+  border: 3px solid black;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.dsc h2{
+  font-family: "font2";
+  font-size: 40px;
+  transform: translateY(-20px);
+  transform: translateX(-50);
+}
+
+.dsc:hover{
+  transform: scale(1.05);
+  color: #5865f2;
+  border: 3px solid #5865f2;
+  box-shadow: 0 0 10px #5865f2, 0 0 20px #5865f2;
+  animation: glow 1.5s infinite alternate;
+}
+
+.server{
+  height: 70px;
+  width: 300px;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  background: #d8000;
+  border: 3px solid black;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.server h2 {
+  font-family: "font2";
+  font-size: 40px;
+  transform: translateY(-20px);
+  padding-right: 100px;
+}
+
+.server:hover{
+  transform: scale(1.05);
+  color: #5865f2;
+  border: 3px solid #5865f2;
+  box-shadow: 0 0 10px #5865f2, 0 0 20px #5865f2;
+    animation: glow 1.5s infinite alternate;
+}
+
+.insta{
+  height: 70px;
+  width: 300px;
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  background: #d8000;
+  border: 3px solid black;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.insta img{
+  height: 57px;
+  width: auto;
+  padding-left: 5px;
+  padding-top: 7px;
+}
+
+.insta h2 {
+  font-family: "font2";
+  font-size: 40px;
+  transform: translateY(-20px);
+  transform: translate(-22px, -20px);
+}
+
+.insta:hover{
+  transform: scale(1.05);
+  color: #ff9f17;
+  border: 3px solid #ff9f17;
+  box-shadow: 0 0 10px #ff9f17, 0 0 20px #ff9f17;
+  animation: glow 1.5s infinite alternate;
+}
+
+
+.yt{
+  height: 70px;
+  width: 300px;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  background: #d8000;
+  border: 3px solid black;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.yt h2 {
+  font-family: "font2";
+  font-size: 40px;
+  transform: translate(10px, -20px);
+}
+
+.yt:hover{
+  transform: scale(1.05);
+  color: #fe0000;
+  border: 3px solid #fe0000;
+  box-shadow: 0 0 10px #fe0000, 0 0 20px #fe0000;
+    animation: glow 1.5s infinite alternate;
+}
+
+.yt img{
+  height: 57px;
+  width: auto;
+  transform: translate(5px, 5px);
+}
+
+
+
+.mc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(0px, -150px);
+  gap: 25px;
+}
+
+.mc h2 {
+  margin: 0;
+}
+
+.gray{
+  color: #70717C;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+}
+
+
+.copy-box {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.copy-icon{
+  position: absolute;
+  inset: 0;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.check-icon {
+  position: absolute;
+  inset: 0;
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.copy-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.check-icon {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.copy-box.copied .copy-icon {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.copy-box.copied .check-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.ip{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.port{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  transform: translateY(-20px);
+}
+
+.ip h2{
+  font-family: 'font2';
+}
+
+.port h2{
+  font-family: 'font2';
+}
+
+h3{
+  font-family: 'font2';
+}
+
+
+
+button:focus {
+  outline: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
